@@ -22,8 +22,11 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 
-Route::get('/account-login-and-security', function () {
-    return view('account-overview');
+Route::get('/account-overview', function () {
+    return view('account.overview');
 })->middleware(['auth'])->name('account-overview');
 
+Route::get('/account-login-and-security', function () {
+    return view('account.login-and-security');
+})->middleware(['auth'])->name('account-login-and-security');
 require __DIR__.'/auth.php';
