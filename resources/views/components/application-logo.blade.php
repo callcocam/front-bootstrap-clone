@@ -1,0 +1,1 @@
+<img class="flex w-24 h-12" src="{{ Storage::url('img/logo.svg')}}">
